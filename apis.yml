@@ -1,8 +1,23 @@
 aid: covestor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/covestor.png
 name: Covestor
-description: Covestor is a company surfaced as a portfolio company of union-square-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Covestor was an online investment management and social investing platform, backed by
+  Union Square Ventures, that let everyday investors mirror the portfolios of vetted model managers
+  through managed brokerage accounts. Interactive Brokers acquired Covestor in 2015 and later rebranded
+  it as Interactive Advisors; the covestor.com domain now 301-redirects to interactiveadvisors.com.
+  No public Covestor developer or API surface exists, so this profile is retained as a historical
+  portfolio-lead stub with only a live domain-security probe recorded.
 url: https://raw.githubusercontent.com/api-evangelist/covestor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fintech
+- Investing
+- Wealth Management
+- Brokerage
+- Social Investing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/covestor-domain-security.yml
 - type: Website
   url: https://covestor.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
